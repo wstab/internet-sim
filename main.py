@@ -11,7 +11,7 @@ def create_server(current_dict, ip_dict, name, ip):
         for i in range(len(parts)):
             parts[i] = int(parts[i])
         # rejects cases in which ip has incorrect bits
-        if not(parts[0] in range(0, 256) and parts[1] in range(0, 256) and parts[2] in range(0, 256) and parts[3] in range(0, 256)) or len(parts) != 4:
+        if len(parts) != 4 or not(parts[0] in range(0, 256) and parts[1] in range(0, 256) and parts[2] in range(0, 256) and parts[3] in range(0, 256)):
             print('Unable to create server: invalid ip')
         # rejects duplicate ips
         elif ip in ip_dict.values():
