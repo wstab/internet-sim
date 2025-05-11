@@ -8,7 +8,7 @@ This program simulates connections between servers and ip addresses.
 
 * Clone the repo
 ```
-git clone https://github.com/wstab/wstab-internet-sim.git
+git clone https://github.com/wstab/internet-sim.git
 ```
 
 ### Executing program
